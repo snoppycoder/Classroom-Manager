@@ -4,5 +4,6 @@
 | No | Name            | ID         |
 |----|:---------------:|:----------:|
 | 1  | Milki Legesse   | UGR/9040/15|
-| 2  | Yitbarek Alemu  | UGR/7554/15|
+| 2  | Tesfanesh Asefa | UGR/1233/15|
+| 3  | Yitbarek Alemu  | UGR/7554/15|
 
