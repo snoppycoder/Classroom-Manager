@@ -1,71 +1,75 @@
-
-| No | Name            | ID         |
-|----|:---------------:|:----------:|
-| 1  | Milki Legesse   | UGR/9040/15|
-| 2  | Tesfanesh Asefa | UGR/1233/15|
-| 3  | Yitbarek Alemu  | UGR/7554/15|
 # Classroom Manager
 
-Classroom Manager is a scheduling and occupancy management system designed to streamline classroom usage in schools, universities, and training centers. It allows **student representatives** to efficiently book, track, and manage classroom availability while providing **students** with real-time access to schedules and room occupancy.
+## Group Members
 
-With an intuitive interface, users can **check room availability, reserve spaces, and avoid scheduling conflicts**. The system also includes **automated notifications and an auto-release feature** to optimize classroom usage.
+| Name              | ID.NO         | Section |  
+|-------------------|--------------|----------|  
+| Milki Legesse     | UGR/9040/15   | 2       |  
+| Tesfanesh Asefa   | UGR/1233/15   | 3       |  
+| Yitbarek Alemu    | UGR/7554/15   | 1       |  
+
+## Project Overview
+
+**Project Name:** Classroom Manager
+
+**Objective:**  
+Classroom Manager is a mobile app designed to help students and student representatives manage classroom bookings and schedules. The app allows users to check room availability, book classrooms, view class schedules, and track room occupancy. It simplifies the process of managing classroom usage, ensuring that rooms are booked and used efficiently.
+
+**Scope:**  
+This app is intended for **student representatives** who can book classrooms and manage schedules, and for **students** who can view classroom availability and their class schedules.
 
 ---
 
 ## Features
 
-### 1. Class Queue Management (Scheduling & Occupancy Tracking)
+### For Student Representatives (Full Control)
+1. **Classroom Booking & Occupancy Management**  
+   - **Create Bookings**: Student representatives can reserve classrooms for lectures or meetings directly from the app.
+   - **Check Room Availability**: They can view if a classroom is free or occupied at any given time.
+   - **Modify Bookings**: If needed, they can change the booking or reschedule the classroom reservation.
+   - **Cancel Bookings**: If a class or meeting is canceled, they can remove the reservation to make the room available for others.
 
-#### Roles & Permissions
+2. **Class Schedule Management**  
+   - **Add Class Schedules**: Representatives can add, modify, or remove class schedules directly from the app.
+   - **View Class Schedules**: They can easily check and verify all class schedules for the semester, including the time and classroom assignments.
 
-##### 1. Student Representatives (Full Control)
+3. **Auto-Release Unused Classrooms**  
+   - **Room Auto-Release**: If a classroom that was booked is not used within 15 minutes, it will automatically become available again. This feature helps avoid unused rooms being blocked for long periods.
 
-- **Classroom Booking & Occupancy Management:**
-  - ✅ **Create:** Can book classrooms for lectures or meetings.
-  - ✅ **Read:** Can check room availability and occupancy.
-  - ✅ **Update:** Can modify or reschedule bookings.
-  - ✅ **Delete:** Can cancel a booking if needed.
-
-- **Class Schedule Management:**
-  - ✅ **Create:** Can add class schedules.
-  - ✅ **Read:** Can check and verify class schedules.
-  - ✅ **Update:** Can edit and reschedule classes.
-  - ✅ **Delete:** Can remove or cancel a scheduled class.
-
-##### 2. Students (Limited Access)
-
-- **Classroom Occupancy & Schedule Viewing:**
-  - ✅ **Read:** Can view classroom occupancy (to see if a room is available or occupied).
-  - ✅ **Read:** Can check their class schedule.
+### For Students (Limited Access)
+1. **Classroom Occupancy Viewing**  
+   - **Check Room Availability**: Students can check if a classroom is free or occupied before heading to their next class.
+   
+2. **View Class Schedule**  
+   - **Access Personal Schedule**: Students can view their class schedules to know when and where their next class is, without needing to rely on printed timetables.
 
 ---
 
-### 2. Auto-Release Unused Classrooms
+## Technologies Used
 
-- If a **booked classroom is not used within 15 minutes**, it is **automatically released** for others to book.
-- **Example:** If no one checks in within the set time, the system updates the room status to **available**.
-- **Implementation Tip:** Uses a **simple timer + status check mechanism** to free up unused spaces.
+### Frontend
+- **Flutter**: The mobile app is developed using Flutter, which allows us to create a smooth and responsive interface that works across both Android and iOS devices.
+- **Dart**: Flutter uses Dart, a programming language, for building the app’s functionality.
 
----
+### Backend
+- **Node.js**: This is used to handle requests made by the app, such as booking classrooms or viewing schedules.
+- **Express.js**: This framework helps manage the app’s backend logic, including the booking system and schedule management.
 
-## Installation & Setup
-
-> (Add instructions here if required, such as environment setup, database configuration, etc.)
-
-## Usage
-
-> (Include details on how to use the system, navigation steps, or API documentation if applicable.)
+### Database
+- **MongoDB**: A database used to store important data like classroom bookings, schedules, and room occupancy statuses.
 
 ---
 
-## Contributing
+## Installation and Setup
 
-Contributions are welcome! Please follow standard contribution guidelines and open an issue or pull request.
+### Prerequisites
+- **Flutter SDK** (Ensure that you have Flutter set up on your machine)
+- **Node.js** (v16 or higher)
+- **MongoDB** instance (local or cloud-based)
+- **Git**
 
----
-
-## License
-
-> (Specify the license for your project, e.g., MIT License.)
-
-a
+### Steps
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/Classroom_Manager.git
+   cd classroom-manager
